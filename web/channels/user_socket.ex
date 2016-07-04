@@ -36,4 +36,3 @@ end
   #
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil
-end
