@@ -1,4 +1,4 @@
-defmodule Callmemd.PageController do
+defmodule Callmemd.MededController do
   use Callmemd.Web, :controller
 
   def index(conn, _params) do

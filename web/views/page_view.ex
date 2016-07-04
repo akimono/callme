@@ -1,3 +1,3 @@
-defmodule Callme.PageView do
-  use Callme.Web, :view
+defmodule Callmemd.PageView do
+  use Callmemd.Web, :view
 end

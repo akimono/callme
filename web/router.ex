@@ -1,5 +1,5 @@
-defmodule Callme.Router do
-  use Callme.Web, :router
+defmodule Callmemd.Router do
+  use Callmemd.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,20 @@ defmodule Callme.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Callme do
+  scope "/", Callmemd do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/contact", ContactController, :index
+    get "/meded", MededController, :index
+    get "/users", UserController, :index
+    get "/scheduler", SchedulerController, :index
+    get "/about", AboutController, :index
+    get "/pricing", PricingController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", Callme do
+  # scope "/api", Callmemd do
   #   pipe_through :api
   # end
 end

@@ -1,4 +1,4 @@
-defmodule Callmemd.PageController do
+defmodule Callmemd.SchedulerController do
   use Callmemd.Web, :controller
 
   def index(conn, _params) do
