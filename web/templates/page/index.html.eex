@@ -1,9 +1,5 @@
 <div class="jumbotron">
 
-<p><a href="<%= contact_path @conn, :index %>">Contact</a></p>
-<p><a href="<%= meded_path( @conn, :index) %>">Medical Education Videos</a></p>
-<p><a href="<%= user_path( @conn, :index) %>">Login</a></p>
-<p><a href="<%= scheduler_path( @conn, :index) %>">Schedule a Visit</a></p>
-<p><a href="<%= about_path( @conn, :index) %>">Meet Our Team</a></p>
-<p><a href="<%= pricing_path( @conn, :index) %>">Pricing and Availability</a></p>
+<p><a href="<%= contact_path @conn, :index %>">Contact</a> | <a href="<%= meded_path( @conn, :index) %>">Medical Education Videos</a> | <a href="<%= user_path( @conn, :index) %>">Login</a> | <a href="<%= scheduler_path( @conn, :index) %>">Schedule a Visit</a> | 
+<a href="<%= about_path( @conn, :index) %>">Meet Our Team</a> | <a href="<%= pricing_path( @conn, :index) %>">Pricing and Availability</a></p>
 </div>
