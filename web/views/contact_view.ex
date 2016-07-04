@@ -1,3 +1,3 @@
-defmodule Callmemd.ContactView do
-  use Callmemd.Web, :view
+defmodule Callme.ContactView do
+  use Callme.Web, :view
 end

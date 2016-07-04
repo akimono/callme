@@ -1,5 +1,5 @@
-defmodule Callmemd.UserController do
-  use Callmemd.Web, :controller
+defmodule Callme.UserController do
+  use Callme.Web, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

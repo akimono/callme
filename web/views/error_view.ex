@@ -1,5 +1,5 @@
-defmodule Callmemd.ErrorView do
-  use Callmemd.Web, :view
+defmodule Callme.ErrorView do
+  use Callme.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

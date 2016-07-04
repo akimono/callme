@@ -1,4 +1,4 @@
-defmodule Callmemd.ErrorHelpers do
+defmodule Callme.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -26,10 +26,10 @@ defmodule Callmemd.ErrorHelpers do
     #
     #     dngettext "errors", "1 file", "%{count} files", count
     #
-    Gettext.dngettext(Callmemd.Gettext, "errors", msg, msg, opts[:count], opts)
+    Gettext.dngettext(Callme.Gettext, "errors", msg, msg, opts[:count], opts)
   end
 
   def translate_error(msg) do
-    Gettext.dgettext(Callmemd.Gettext, "errors", msg)
+    Gettext.dgettext(Callme.Gettext, "errors", msg)
   end
 end

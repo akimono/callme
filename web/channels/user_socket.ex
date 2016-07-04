@@ -5,9 +5,7 @@ defmodule Callme.UserSocket do
   # channel "rooms:*", Callme.RoomChannel
 
   ## Transports
-  transport :websocket, Phoenix.Transports.WebSocket,
-    timeout: 45_000
-end
+
   # transport :longpoll, Phoenix.Transports.LongPoll
 
   # Socket params are passed from the client and can
@@ -36,3 +34,4 @@ end
   #
   # Returning `nil` makes this socket anonymous.
   def id(_socket), do: nil
+end

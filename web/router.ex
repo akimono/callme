@@ -1,5 +1,5 @@
-defmodule Callmemd.Router do
-  use Callmemd.Web, :router
+defmodule Callme.Router do
+  use Callme.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,7 +13,7 @@ defmodule Callmemd.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Callmemd do
+  scope "/", Callme do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index

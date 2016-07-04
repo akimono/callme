@@ -1,5 +1,5 @@
-defmodule Callmemd.SchedulerController do
-  use Callmemd.Web, :controller
+defmodule Callme.SchedulerController do
+  use Callme.Web, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

@@ -1,3 +1,3 @@
-defmodule Callmemd.PricingView do
-  use Callmemd.Web, :view
+defmodule Callme.PricingView do
+  use Callme.Web, :view
 end

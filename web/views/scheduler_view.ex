@@ -1,3 +1,3 @@
-defmodule Callmemd.SchedulerView do
-  use Callmemd.Web, :view
+defmodule Callme.SchedulerView do
+  use Callme.Web, :view
 end
