@@ -19,7 +19,7 @@ defmodule Callme.Router do
     get "/", PageController, :index
     get "/contact", ContactController, :index
     get "/meded", MededController, :index
-    get "/users", UserController, :index
+    resources "/users", UserController
     get "/scheduler", SchedulerController, :index
     get "/about", AboutController, :index
     get "/pricing", PricingController, :index

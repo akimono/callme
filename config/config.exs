@@ -27,3 +27,11 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+config :callme, Callme.Repo,
+adapter: Ecto.Adapters.Postgres,
+username: "postgres",
+password: "postgres",
+database: "callme_dev",
+hostname: "localhost",
+pool_size: 10
