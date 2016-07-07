@@ -4,7 +4,7 @@
 <%= text_input f, :name, placeholder: "Name", class: "form-control" %>
 </div>
 <div class="form-group">
-<%= text_input f, :username, placeholder: "Username", class: "form-control" %>
+<%= text_input f, :email, placeholder: "email", class: "form-control" %>
 </div>
 <div class="form-group">
 <%= password_input f, :password, placeholder: "Password", class: "form-control" %>

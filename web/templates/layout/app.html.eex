@@ -15,7 +15,7 @@
     <div class="container">
       <header class="header">
         <nav role="navigation">
-        <a href="<%= page_path @conn, :index %>">Home Button here</a>
+        <a href="<%= page_path @conn, :index %>">Home Button here</a> <div style="position:relative; left: 600px; top: -22px" ><a href="<%= user_path( @conn, :index) %>"> Login </a> / <a href="<%= user_path( @conn, :new) %>"> Register </a></div>
         </nav>
         
       </header>
@@ -24,8 +24,7 @@
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 <div class="jumbotron">
 
-<p><a href="<%= contact_path @conn, :index %>">Contact</a> | <a href="<%= meded_path( @conn, :index) %>">Medical Education</a> | <a href="<%= user_path( @conn, :index) %>">Login</a> | <a href="<%= scheduler_path( @conn, :index) %>">Schedule a Visit</a> | 
-<a href="<%= about_path( @conn, :index) %>">Meet Our Team</a> | <a href="<%= pricing_path( @conn, :index) %>">Pricing and Availability</a></p>
+<p><a href="<%= about_path( @conn, :index) %>">Meet Our Team</a>  | <a href="<%= pricing_path( @conn, :index) %>">Pricing and Availability</a> | <a href="<%= scheduler_path( @conn, :index) %>">Schedule a Visit</a> | <a href="<%= meded_path( @conn, :index) %>">Patient Medical Education</a> | <a href="<%= contact_path @conn, :index %>">Contact Us</a> </p>
 </div>
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
