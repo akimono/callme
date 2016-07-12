@@ -2,8 +2,9 @@ defmodule Callme.UserController do
   use Callme.Web, :controller
 
   def index(conn, _params) do
+    changeset = Session.changeset(%Session{})
     users = Repo.all(User)
-    render conn, "index.html", users: users
+    render conn, "index.html", users: users, changeset:  changeset
   end
   def show(conn, %{"id" => id}) do
   	user = Repo.get(User, id)
@@ -14,10 +15,14 @@ defmodule Callme.UserController do
   render conn, "new.html", changeset: changeset
   end
  def create(conn, %{"user" => user_params}) do
-changeset = User.changeset(%User{}, user_params)
-{:ok, user} = Repo.insert(changeset)
+changeset = User.login_changeset(%User{}, user_params)
+case Repo.insert(changeset) do
+{:ok, user} ->
 conn
 |> put_flash(:info, "#{user.name} created!")
 |> redirect(to: user_path(conn, :index))
+{:error, changeset} ->
+render(conn, "new.html", changeset: changeset)
+end
 end
 end

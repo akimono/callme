@@ -1,0 +1,2 @@
+Test view page
+<%= @email %>, <%= @success %>, <%= @user %>, <%= @userpassword %>, <%= @password %>

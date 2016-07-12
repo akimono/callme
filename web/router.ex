@@ -23,6 +23,8 @@ defmodule Callme.Router do
     get "/scheduler", SchedulerController, :index
     get "/about", AboutController, :index
     get "/pricing", PricingController, :index
+    post "/login", SessionController, :create
+    get "/login", SessionController, :index
   end
 
   # Other scopes may use custom stacks.

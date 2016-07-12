@@ -1,5 +1,15 @@
 </p>Login page test</p>
 <%= link "New Users", to: user_path(@conn, :new) %>
+<h1>New User</h1>
+<%= form_for @changeset, session_path(@conn, :create), fn f -> %>
+<div class="form-group">
+<%= text_input f, :email, placeholder: "email", class: "form-control" %>
+</div>
+<div class="form-group">
+<%= password_input f, :password, placeholder: "Password", class: "form-control" %>
+</div>
+<%= submit "login route test", class: "btn btn-primary" %>
+<% end %>
 <h1>Listing Users</h1>
 <table class="table">
 <%= for user <- @users do %>
