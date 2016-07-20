@@ -1,21 +1,19 @@
-</p>Login page test</p>
-<%= link "New Users", to: user_path(@conn, :new) %>
-<h1>New User</h1>
-<%= form_for @changeset, session_path(@conn, :create), fn f -> %>
-<div class="form-group">
-<%= text_input f, :email, placeholder: "email", class: "form-control" %>
-</div>
-<div class="form-group">
-<%= password_input f, :password, placeholder: "Password", class: "form-control" %>
-</div>
-<%= submit "login route test", class: "btn btn-primary" %>
-<% end %>
+<center> </p>Login page test</p>
+<%= if  @current_user == nil do %> <a href="<%= session_path( @conn, :new) %>"> Login </a><% end %> <%= if @current_user do %> <%= admin = @current_user.admin %> <%= if admin do %>  / <a href="<%= user_path( @conn, :new) %>"> Register New User </a>
+
+
+
 <h1>Listing Users</h1>
 <table class="table">
 <%= for user <- @users do %>
 <tr>
 <td><b><%= user.email %></b> (<%= user.id %>)</td>
 <td><%= link "View", to: user_path(@conn, :show, user.id) %></td>
+<td><%= link "Edit", to: user_path(@conn, :edit, user.id) %></td>
+<td><%= link "Delete", to: user_path(@conn, :delete, user.id), method: "delete" %></td>
 </tr>
 <% end %>
 </table>
+<% end %><%end%>
+<br><br>
+</center>

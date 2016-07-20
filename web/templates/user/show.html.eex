@@ -1,2 +1,2 @@
 <h1>Showing User</h1>
-<b><%= @user.email %></b> (<%= @user.id %>) , <%= @user.password %>,   <%= @user.crypted_password %>
+<b><%= @user.email %></b> (<%= @user.id %>) , <%= @user.password %>,   <%= @user.crypted_password %>, <%= @user.admin %>

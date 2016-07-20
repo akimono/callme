@@ -1,13 +1,14 @@
 defmodule Callme.Router do
   use Callme.Web, :router
 
-  pipeline :browser do
-    plug :accepts, ["html"]
-    plug :fetch_session
-    plug :fetch_flash
-    plug :protect_from_forgery
-    plug :put_secure_browser_headers
-  end
+pipeline :browser do
+plug :accepts, ["html"]
+plug :fetch_session
+plug :fetch_flash
+plug :protect_from_forgery
+plug :put_secure_browser_headers
+plug Callme.Auth, repo: Callme.Repo
+end
 
   pipeline :api do
     plug :accepts, ["json"]
@@ -23,8 +24,13 @@ defmodule Callme.Router do
     get "/scheduler", SchedulerController, :index
     get "/about", AboutController, :index
     get "/pricing", PricingController, :index
-    post "/login", SessionController, :create
-    get "/login", SessionController, :index
+    post "/logincreate", UserController, :logincreate
+    post "/users/:id", UserController, :update
+    get "login", UserController, :index
+    resources "/sessions", SessionController, only: [:new, :create, :delete]
+    resources "/doctors", DoctorController
+    resources "/services", ServiceController
+
   end
 
   # Other scopes may use custom stacks.

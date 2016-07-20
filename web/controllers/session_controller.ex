@@ -1,27 +1,24 @@
 defmodule Callme.SessionController do
   use Callme.Web, :controller
-    def create(conn, _params) do
-    	session = _params["session"]
-    	success = "nothing"
-    	email = session["email"]
-    	password = session["password"]
-
-    	case Repo.get_by(User, email: email) do 
-    		nil -> 
-    			conn
-    			|> put_flash(:error, "Email incorrect")
-    			|> redirect(to: user_path(conn, :index))
-    		_ -> user = Repo.get_by(User, email: email)
-    		    userpassword = user.crypted_password
-    		    result = Comeonin.Bcrypt.checkpw(password, user.crypted_password)
-    		    case result do
-    	         :true -> success = "succesufl decrypt"
-    		    _ -> success = "unsuccessful decrypt"
-    		   end
-    	end
-   render conn, "index.html", email: email, success: result, user: user.name, userpassword: user.crypted_password, password: password
-  end
-  def delete(conn, _) do
-
+def new(conn, _) do
+render conn, "new.html"
+end
+def create(conn, %{"session" => %{"email" => email, "password" => pass}}) do
+case Callme.Auth.login_by_username_and_pass(conn, email, pass, repo:
+Repo) do
+{:ok, conn} ->
+conn
+|> put_flash(:info, "Welcome back!")
+|> redirect(to: page_path(conn, :index))
+{:error, _reason, conn} ->
+conn
+|> put_flash(:error, "Invalid email/password combination")
+|> render("new.html")
+end
+end
+def delete(conn, _) do
+conn
+|> Callme.Auth.logout()
+|> redirect(to: page_path(conn, :index))
 end
 end

@@ -1,0 +1,33 @@
+<h2>Show Doctor</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @doctor.name %>
+  </li>
+
+  <li>
+    <strong>Hiddeninfo:</strong>
+    <%= @doctor.hiddeninfo %>
+  </li>
+
+  <li>
+    <strong>Bio:</strong>
+    <%= @doctor.bio %>
+  </li>
+
+  <li>
+    <strong>Specialty:</strong>
+    <%= @doctor.specialty %>
+  </li>
+
+  <li>
+    <strong>Picture:</strong>
+    <%= @doctor.picture %>
+  </li>
+
+</ul>
+<%= link("services", to: service_path(@conn, :index, doctor_id: @doctor.id)) %>
+<%= link "Edit", to: doctor_path(@conn, :edit, @doctor) %>
+<%= link "Back", to: doctor_path(@conn, :index) %>

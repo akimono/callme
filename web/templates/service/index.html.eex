@@ -1,0 +1,37 @@
+<h2>Listing Services</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Locations</th>
+      <th>Info</th>
+      <th>Cost</th>
+      <th>Status</th>
+      <th> Doctor ID</th>
+    
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for service <- @services do %>
+    <tr>
+      <td><%= service.name %></td>
+      <td><%= service.locations %></td>
+      <td><%= service.info %></td>
+      <td><%= service.cost %></td>
+      <td><%= service.active %></td>
+      <td><%= service.doctor_id %> </td>
+
+      <td class="text-right">
+        <%= link "Show", to: service_path(@conn, :show, service), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: service_path(@conn, :edit, service), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: service_path(@conn, :delete, service), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+<%= @doctor.name %>
+<%= link "New service", to: service_path(@conn, :new, doctor_id: @doctor.id) %>

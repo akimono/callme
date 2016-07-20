@@ -1,0 +1,14 @@
+<h2>Edit User</h2>
+<%= form_for @changeset, user_path(@conn, :update, @user.id), fn f -> %>
+<div class="form-group">User's Name:
+<%= text_input f, :name, placeholder: @user.name, value: @user.name, class: "form-control" %>
+</div>
+<div class="form-group">User's Email:
+<%= text_input f, :email, placeholder: @user.email, value: @user.email, class: "form-control" %>
+</div>
+<div class="form-group">Check to make user admin:
+<input id="admin" name="user[admin]" type="checkbox" value=<%= true %>>
+</div>
+
+<%= submit "Update User", class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,6 @@
+<h2>Edit doctor</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: doctor_path(@conn, :update, @doctor) %>
+
+<%= link "Back", to: doctor_path(@conn, :index) %>

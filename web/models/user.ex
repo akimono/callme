@@ -6,11 +6,15 @@ field :name, :string
 field :password, :string, virtual: true
 field :email, :string
 field :crypted_password, :string
+field :admin, :boolean, default: false
 timestamps
 end
 @required_fields ~w(name email )
 
-
+def log_changeset(user, params) do
+	user
+	|> cast(params, ~w(email password), [])
+end
 def login_changeset(user, params) do
 user
 |> changeset(params)
@@ -20,7 +24,7 @@ user
 end
 def changeset(user, params \\ :empty) do
 	user
-	|> cast(params, ~w(name email), [])
+	|> cast(params, ~w(name email admin), [])
 	|> validate_length(:email, min: 1, max: 20)
 end
 defp put_pass_hash(changeset) do

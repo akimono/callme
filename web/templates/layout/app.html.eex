@@ -15,7 +15,10 @@
     <div class="container">
       <header class="header">
         <nav role="navigation">
-        <a href="<%= page_path @conn, :index %>">Home Button here</a> <div style="position:relative; left: 600px; top: -22px" ><a href="<%= user_path( @conn, :index) %>"> Login </a> / <a href="<%= user_path( @conn, :new) %>"> Register </a></div>
+        <a href="<%= page_path @conn, :index %>">Home Button here</a><div style="position:relative; left: 400px; top: -22px; font-size: 170%" >Call Us (XXX) XXX-XXXX </div><%=  if @current_user do %> <%= @current_user.email %> <div style="position:relative; left: 600px; top: -22px" > <%= link "Log out", to: session_path(@conn, :delete, @current_user),
+method: "delete" %><% else %><div style="position:relative; left: 600px; top: -22px" ><% end %>
+         
+        </div>
         </nav>
         
       </header>
@@ -24,7 +27,7 @@
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 <div class="jumbotron">
 
-<p><a href="<%= about_path( @conn, :index) %>">Meet Our Team</a>  | <a href="<%= pricing_path( @conn, :index) %>">Pricing and Availability</a> | <a href="<%= scheduler_path( @conn, :index) %>">Schedule a Visit</a> | <a href="<%= meded_path( @conn, :index) %>">Patient Medical Education</a> | <a href="<%= contact_path @conn, :index %>">Contact Us</a> </p>
+<p><a href="<%= about_path( @conn, :index) %>">Find a Doctor</a>  | <a href="<%= pricing_path( @conn, :index) %>">Need a Quick Call?</a> | <a href="<%= meded_path( @conn, :index) %>">Patient Medical Education</a> | <a href="<%= scheduler_path( @conn, :index) %>">For Providers</a> |  <a href="<%= contact_path @conn, :index %>">Contact Us</a> </p>
 </div>
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
@@ -32,5 +35,15 @@
 
     </div> <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21893067-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>
