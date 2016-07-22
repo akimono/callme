@@ -1,0 +1,7 @@
+Success<br>
+<%= @specialty %><br><%= @servicetype %> <br> <%= @zip %>
+
+<br><br> Service Shown Search Results <br><br>
+<%= for servicestate <- @servicesshown do %> 
+<%= servicestate.name %>/ <%= servicestate.id %> / <%= servicestate.specialty %> / <%= servicestate.doctor_id %> <%= link "Show Service", to: search_path(@conn, :serviceshow, doctor_id: servicestate.doctor_id, service_id: servicestate.id), class: "btn btn-default btn-xs" %> <br>
+<% end %>

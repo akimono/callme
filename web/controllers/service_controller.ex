@@ -38,13 +38,15 @@ defmodule Callme.ServiceController do
 
   def edit(conn, %{"id" => id}) do
     service = Repo.get!(Service, id)
+    doctor = Repo.get(Callme.Doctor, service.doctor_id)
     changeset = Service.changeset(service)
-    render(conn, "edit.html", service: service, changeset: changeset)
+    render(conn, "edit.html", service: service, changeset: changeset, doctor: doctor)
   end
 
   def update(conn, %{"id" => id, "service" => service_params}) do
+   
     service = Repo.get!(Service, id)
-    changeset = Service.changeset(Service, service_params)
+     changeset = Service.changeset(service, service_params)
 
     case Repo.update(changeset) do
       {:ok, service} ->

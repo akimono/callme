@@ -1,0 +1,3 @@
+Success
+<%= @doctor.name %>, <%= @doctor.bio %>, <%= @doctor.specialty %>, <%= @doctor.picture %> <br>
+<%= @service.name %>, <%= @service.info %>, <%= @service.cost %>, <%= @service.type %>, <%= @service.specialty %>

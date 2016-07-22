@@ -8,8 +8,9 @@
       <th>Info</th>
       <th>Cost</th>
       <th>Status</th>
+      <th>Specialty</th>
       <th> Doctor ID</th>
-    
+
 
       <th></th>
     </tr>
@@ -22,6 +23,7 @@
       <td><%= service.info %></td>
       <td><%= service.cost %></td>
       <td><%= service.active %></td>
+      <td><%= service.specialty %></td>
       <td><%= service.doctor_id %> </td>
 
       <td class="text-right">

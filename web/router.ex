@@ -30,7 +30,10 @@ end
     resources "/sessions", SessionController, only: [:new, :create, :delete]
     resources "/doctors", DoctorController
     resources "/services", ServiceController
-
+    resources "/zipcodes", ZipcodeController
+    post "/zipsearch", SearchController, :zipsearch
+    get "/serivceshow", SearchController, :serviceshow
+    post "refinesearch", SearchController, :refinesearch
   end
 
   # Other scopes may use custom stacks.

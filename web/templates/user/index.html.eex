@@ -1,5 +1,14 @@
 <center> </p>Login page test</p>
-<%= if  @current_user == nil do %> <a href="<%= session_path( @conn, :new) %>"> Login </a><% end %> <%= if @current_user do %> <%= admin = @current_user.admin %> <%= if admin do %>  / <a href="<%= user_path( @conn, :new) %>"> Register New User </a>
+<%= if  @current_user == nil do %> <a href="<%= session_path( @conn, :new) %>"> Login </a><% end %> <%= if @current_user do %> 
+<%= link "Doctors Page", to: doctor_path(@conn, :index) %>
+
+
+
+
+
+
+
+<%= admin = @current_user.admin %> <%= if admin do %>  / <a href="<%= user_path( @conn, :new) %>"> Register New User </a>
 
 
 

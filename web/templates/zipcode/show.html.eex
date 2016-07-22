@@ -1,0 +1,23 @@
+<h2>Show zipcode</h2>
+
+<ul>
+
+  <li>
+    <strong>Zip:</strong>
+    <%= @zipcode.zip %>
+  </li>
+
+  <li>
+    <strong>County:</strong>
+    <%= @zipcode.county %>
+  </li>
+
+  <li>
+    <strong>State:</strong>
+    <%= @zipcode.state %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: zipcode_path(@conn, :edit, @zipcode) %>
+<%= link "Back", to: zipcode_path(@conn, :index) %>

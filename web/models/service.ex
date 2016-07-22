@@ -7,12 +7,14 @@ defmodule Callme.Service do
     field :info, :string
     field :cost, :string
     field :active, :string
+    field :type, :string
+    field :specialty, :string
     belongs_to :doctor, Callme.Doctor, foreign_key: :doctor_id
 
     timestamps
   end
 
-  @required_fields ~w(name locations info cost active doctor_id)
+  @required_fields ~w(name locations info cost active doctor_id specialty type)
   @optional_fields ~w()
 
   @doc """

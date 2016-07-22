@@ -28,7 +28,16 @@
     <%= text_input f, :cost, class: "form-control" %>
     <%= error_tag f, :cost %>
   </div>
-
+ <div class="form-group">
+    <%= label f, :specialty, class: "control-label" %>
+    <%= text_input f, :specialty, class: "form-control" %>
+    <%= error_tag f, :specialty %>
+  </div> 
+   <div class="form-group">
+    <%= label f, :type, class: "control-label" %>
+    <%= text_input f, :type, class: "form-control" %>
+    <%= error_tag f, :type %>
+  </div> 
   <div class="form-group">
     <%= label f, :active, class: "control-label" %>
     <%= text_input f, :active, class: "form-control" %>

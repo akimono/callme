@@ -1,0 +1,30 @@
+<h2>Listing zipcodes</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Zip</th>
+      <th>County</th>
+      <th>State</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for zipcode <- @zipcodes do %>
+    <tr>
+      <td><%= zipcode.zip %></td>
+      <td><%= zipcode.county %></td>
+      <td><%= zipcode.state %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: zipcode_path(@conn, :show, zipcode), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: zipcode_path(@conn, :edit, zipcode), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: zipcode_path(@conn, :delete, zipcode), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New zipcode", to: zipcode_path(@conn, :new) %>

@@ -27,10 +27,10 @@
     <%= @service.active %>
   </li>
    <li>
-    <strong>Active Status:</strong>
+    <strong>Doctor ID</strong>
     <%= @service.doctor_id %>
   </li>
 </ul>
 
 <%= link "Edit", to: service_path(@conn, :edit, @service) %>
-<%= link "Back", to: service_path(@conn, :index) %>
+<%= link "Back", to: service_path(@conn, :index, doctor_id: @service.doctor_id) %>

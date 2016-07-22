@@ -1,0 +1,6 @@
+<h2>Edit zipcode</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: zipcode_path(@conn, :update, @zipcode) %>
+
+<%= link "Back", to: zipcode_path(@conn, :index) %>
