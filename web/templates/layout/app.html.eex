@@ -9,6 +9,7 @@
 
     <title>Call me MD!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <meta name="google-site-verification" content="o3J3-lIUcW6kC8K59q81dkDLyKgkxRvJycHbrgCJGW0" />
   </head>
 
   <body>
