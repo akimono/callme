@@ -19,10 +19,22 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+config :arc,
+  bucket: "callmemd"
+
+  config :ex_aws,
+      access_key_id: "AKIAIVCOAPOOIW5EB4FA",
+      secret_access_key: "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",
+        region: "us-west-2",
+  s3: [
+    scheme: "https://",
+    host: "s3.amazonaws.com",
+    region: "us-west-2"
+  ]
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
-
+import_config "config.secret.exs"
 # Configure phoenix generators
 config :phoenix, :generators,
   migration: true,

@@ -17,7 +17,7 @@ defmodule Callme.DoctorController do
 
   def create(conn, %{"doctor" => doctor_params}) do
     changeset = Doctor.changeset(%Doctor{}, doctor_params)
-
+    Avatar.store({doctor_params["avatar"], doctor_params["id"]})
     case Repo.insert(changeset) do
       {:ok, _doctor} ->
         conn

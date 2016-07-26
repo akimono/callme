@@ -34,6 +34,8 @@ end
     post "/zipsearch", SearchController, :zipsearch
     get "/serivceshow", SearchController, :serviceshow
     post "refinesearch", SearchController, :refinesearch
+    resources "/videos", VideoController
+    get "/bytopic", MededController, :bytopic
   end
 
   # Other scopes may use custom stacks.

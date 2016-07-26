@@ -18,7 +18,7 @@ defmodule Callme.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Callme, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
+     applications: [:phoenix, :phoenix_html, :cowboy, :ex_aws, :httpoison, :logger, :gettext,
                     :phoenix_ecto, :postgrex]]
   end
 
@@ -37,7 +37,12 @@ defmodule Callme.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:comeonin, "~> 1.0"},
-     {:cowboy, "~> 1.0"}]
+     {:mailgun, "~> 0.1.2"},
+     {:poison, "~> 2.1", override: true},
+     {:cowboy, "~> 1.0"},
+     {:arc, "~> 0.5.2"},
+     {:ex_aws, "~> 0.4.10"},
+     {:httpoison, "~> 0.7"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
