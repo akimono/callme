@@ -18,7 +18,7 @@ defmodule Callme.DoctorController do
   def create(conn, %{"doctor" => doctor_params}) do
     changeset = Doctor.changeset(%Doctor{}, doctor_params)
     avatar = doctor_params["avatar"]
-    Callme.Avatar.store({avatar.filename, avatar.path})
+    Callme.Avatar.store({%Plug.Upload{}, doctor_params["id"]})
     case Repo.insert(changeset) do
       {:ok, _doctor} ->
         conn
