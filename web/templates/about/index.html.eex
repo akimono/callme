@@ -1,7 +1,7 @@
-Search for providers servicing your Zip Code:
+<center> Search for providers servicing your Zip Code:
 <%= form_for @changeset, search_path(@conn, :zipsearch), fn f -> %>
 <div class="form-group">
 <%= text_input f, :searchzip, placeholder: "Please Enter Your Zip Code", class: "form-control" %>
 </div>
 <%= submit "Search for Services", class: "btn btn-primary" %>
-<% end %>
+<% end %></center>
