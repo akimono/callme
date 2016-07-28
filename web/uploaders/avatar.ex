@@ -16,9 +16,7 @@ defmodule Callme.Avatar do
       |> String.downcase
     Enum.member?(@extension_whitelist, file_extension)
   end
- def storage_dir(_, {file, user}) do
-    "uploads/avatars/#{user.id}"
-  end
+ 
 
   # Provide a default URL if there hasn't been a file uploaded
   def default_url(_version, _scope) do
