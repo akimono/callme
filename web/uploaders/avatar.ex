@@ -6,9 +6,7 @@ defmodule Callme.Avatar do
 
   @versions [:original, :thumb]
 
-  def transform(:thumb, _) do
-    {:convert, "-strip -thumbnail 100x100^ -gravity center -extent 100x100 -format png", :png}
-  end
+
 
    def __storage, do: Arc.Storage.Local
 
