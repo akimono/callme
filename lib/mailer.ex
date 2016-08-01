@@ -1,6 +1,6 @@
 defmodule Callme.Mailer do
-  @config domain: Application.get_env(:callme, :mailgun_domain),
-          key: Application.get_env(:callme, :mailgun_key)
+  @config domain: "callmemd.com",
+          key: "key-0aac767d8bc24b174c9e3272f0ec700d"
   use Mailgun.Client, @config
 
 
