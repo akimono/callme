@@ -36,12 +36,14 @@ config :phoenix, :generators,
   migration: true,
   binary_id: false
 
+config :callme, 
+  mailgun_domain: System.get_env("MAILGUN_DOMAIN"),
+  mailgun_key: System.get_env("MAILGUN_API_KEY")
+
 config :callme, Callme.Repo,
 adapter: Ecto.Adapters.Postgres,
 username: "postgres",
 password: "postgres",
 database: "callme_dev",
 hostname: "localhost",
-pool_size: 10,
-mailgun_domain: System.get_env("MAILGUN_DOMAIN"),
-mailgun_key: System.get_env("MAILGUN_API_KEY")
+pool_size: 10
