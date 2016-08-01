@@ -32,6 +32,7 @@ defmodule Callme.Mixfile do
   defp deps do
     [{:phoenix, "~> 1.1.4"},
      {:postgrex, ">= 0.0.0"},
+     {:ecto, "~>1.1.2", override: true},
      {:phoenix_ecto, "~> 2.0"},
      {:phoenix_html, "~> 2.4"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
@@ -42,6 +43,7 @@ defmodule Callme.Mixfile do
      {:cowboy, "~> 1.0"},
      {:arc, "~> 0.5.2"},
      {:ex_aws, "~> 0.4.10"},
+     {:arc_ecto, "~> 0.4.3"},
      {:httpoison, "~> 0.7"}]
   end
 

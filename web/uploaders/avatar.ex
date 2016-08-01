@@ -1,30 +1,31 @@
 defmodule Callme.Avatar do
   use Arc.Definition
-
+ use Arc.Ecto.Definition
   # Include ecto support (requires package arc_ecto installed):
   # use Arc.Ecto.Definition
+  @versions [:original, :thumb]
+  @extension_whitelist ~w(.jpg .jpeg .gif .png)
 
-    @versions [:original]
-  @extension_whitelist ~w(.jpg .jpeg .png)
+  def acl(:thumb, _), do: :public_read
 
-  # Whitelist file extensions:
-  def validate({file, _}) do
-    # TODO: validate size
-    file_extension =
-      file.file_name
-      |> Path.extname
-      |> String.downcase
+  def validate({file, _}) do   
+    file_extension = file.file_name |> Path.extname |> String.downcase
     Enum.member?(@extension_whitelist, file_extension)
   end
- 
 
-  # Provide a default URL if there hasn't been a file uploaded
-  def default_url(_version, _scope) do
-    "http://placehold.it/200x200"
+  def transform(:thumb, _) do
+    { :noaction }
   end
 
-  def s3_object_headers(_version, {file, _scope}) do
-    # For "image.png", would produce: "image/png"
-    [content_type: Plug.MIME.path(file.file_name)]
+  def filename(version, _) do
+    version
+  end
+
+  def storage_dir(_, {file, user}) do
+    "uploads/avatars/#{user.id}"
+  end
+
+  def default_url(:thumb) do
+    "https://placehold.it/100x100"
   end
 end
