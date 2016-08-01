@@ -44,12 +44,13 @@ defmodule Callme.Mixfile do
      {:arc, "~> 0.5.2"},
      {:ex_aws, "~> 0.4.10"},
      {:arc_ecto, "~> 0.3.2"},
+     {:mailgun, "~> 0.1.2"},
      {:httpoison, "~> 0.7"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
   # For example, to create, migrate and run the seeds file at once:
-  #
+  
   #     $ mix ecto.setup
   #
   # See the documentation for `Mix` for more info on aliases.

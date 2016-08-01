@@ -42,4 +42,6 @@ username: "postgres",
 password: "postgres",
 database: "callme_dev",
 hostname: "localhost",
-pool_size: 10
+pool_size: 10,
+mailgun_domain: System.get_env("MAILGUN_DOMAIN"),
+mailgun_key: System.get_env("MAILGUN_API_KEY")
