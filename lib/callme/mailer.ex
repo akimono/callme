@@ -1,6 +1,6 @@
 defmodule Callme.Mailer do
-  @config domain: "mail.callmemd.com",
-          key: "key-0aac767d8bc24b174c9e3272f0ec700d"
+  @config domain: System.get_env("MAILGUN_DOMAIN"),
+          key: System.get_env("MAILGUN_API_KEY")
   use Mailgun.Client, @config
 
 
