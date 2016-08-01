@@ -21,9 +21,10 @@ config :logger, :console,
 
 config :arc,
   bucket: "callme"
+
 config :ex_aws,
-access_key_id: [{:system, "AWS_ACCESS_KEY"}, :instance_role],
-secret_access_key: [{:system, "AWS_SECRET_ACCESS_KEY"}, :instance_role]
+access_key_id: System.get_env("AWS_ACCESS_KEY"),
+secret_access_key: System.get_env("AWS_SECRET_ACCESS_KEY")
 
  #.env library
 # Import environment specific config. This must remain at the bottom

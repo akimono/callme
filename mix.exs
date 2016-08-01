@@ -43,7 +43,7 @@ defmodule Callme.Mixfile do
      {:cowboy, "~> 1.0"},
      {:arc, "~> 0.5.2"},
      {:ex_aws, "~> 0.4.10"},
-     {:arc_ecto, "~> 0.4.3"},
+     {:arc_ecto, "~> 0.3.2"},
      {:httpoison, "~> 0.7"}]
   end
 

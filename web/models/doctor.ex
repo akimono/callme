@@ -1,6 +1,6 @@
 defmodule Callme.Doctor do
   use Callme.Web, :model
-use Arc.Ecto.Schema
+use Arc.Ecto.Model
   schema "doctors" do
     field :name, :string
     field :hiddeninfo, :string
@@ -24,9 +24,10 @@ use Arc.Ecto.Schema
   with no validation performed.
   """
  
-def changeset(model, params \\  %{}) do
+def changeset(model, params \\ :empty) do
     model
     |> cast(params, @required_fields, @optional_fields)
-    |> cast_attachments(params, @optional_file_fields)
+    |> cast_attachments(params, @required_file_fields, @optional_file_fields)
+
   end
 end
