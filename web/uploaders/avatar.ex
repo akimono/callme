@@ -17,9 +17,9 @@ defmodule Callme.Avatar do
     {:convert, "-strip -thumbnail 100x100^ -gravity center -extent 100x100"}
   end
 
-  def filename(version, _) do
-    version
-  end
+  def filename(version, {file, scope}) do
+  "#{scope.id}_#{version}_#{file.file_name}"
+    end
 
   def storage_dir(_, {file, user}) do
     "uploads/avatars/#{user.id}"
