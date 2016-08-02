@@ -5,11 +5,10 @@ defmodule Callme.SearchController do
   	userzip = _params["searchzip"]
   	
   	zip = Repo.get_by(Callme.Zipcode, zip: userzip["searchzip"] )
-  	servicesaval = Repo.all(from u in Callme.Service, where: ilike(u.locations, ^zip.county))
   	servicesstate = Repo.all(from p in Callme.Service, where: ilike(p.locations, ^"%#{zip.state}%") or ilike(p.locations, ^zip.county))
   	servicespecialties = Repo.all(from p in Callme.Service, where: ilike(p.locations, ^"%#{zip.state}%") or ilike(p.locations, ^zip.county), where: p.specialty > "", distinct: p.specialty)
   	servicetypes = Repo.all(from p in Callme.Service, where: ilike(p.locations, ^"%#{zip.state}%") or ilike(p.locations, ^zip.county), where: p.type > "", distinct: p.type)
-  	render conn, "zipsearch.html", userzip: userzip, zip: zip, servicesaval: servicesaval, servicesstate: servicesstate, servicespecialties: servicespecialties, servicetypes: servicetypes
+  	render conn, "zipsearch.html", userzip: userzip, zip: zip, servicesstate: servicesstate, servicespecialties: servicespecialties, servicetypes: servicetypes
   end
   def serviceshow(conn, _params) do
   	doctor = Repo.get_by(Callme.Doctor, id: _params["doctor_id"])

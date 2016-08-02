@@ -18,16 +18,10 @@ Service Type:<select name="servicetype">
 </form>
 
 
-check to see if zip lookup works:<br>
-zip searched:<%= @zip.zip %><br>
-County: <%= @zip.county %> <br>
-State: <%= @zip.state %><br>
-<br> <br> 
-Service county search:<br>
-<%= for service <- @servicesaval do %>
-<%= service.name %>, <br>
-<% end %>
-<br><br> Service state Search <br><br>
+Showing Services Available in Zip Code <%= @zip.zip %> (<%= @zip.county %>):<br>
+ <Center><div style="background-color:#f5f8ff;border-radius: 6px;border-top: 1px solid #e5e5e5;border-right: 1px solid #d0cece;border-left: 1px solid #e5e5e5;border-bottom: 1px solid #d0cece;"> 
+ 
 <%= for servicestate <- @servicesstate do %> 
-<%= servicestate.name %>/ <%= servicestate.id %> / <%= servicestate.specialty %> / <%= servicestate.doctor_id %> <%= link "Show Service", to: search_path(@conn, :serviceshow, doctor_id: servicestate.doctor_id, service_id: servicestate.id), class: "btn btn-default btn-xs" %> <br>
+<div style="padding:5px;display:inline;"><%= link "#{servicestate.name} -  #{servicestate.cost}", to: search_path(@conn, :serviceshow, doctor_id: servicestate.doctor_id, service_id: servicestate.id), class: "btn btn-default btn-xs", style: "font-size:90%;" %> </div>
 <% end %>
+</div></center>

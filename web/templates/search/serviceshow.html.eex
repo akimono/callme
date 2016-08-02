@@ -1,3 +1,3 @@
-Success
-<%= @doctor.name %>, <%= @doctor.bio %>, <%= @doctor.specialty %>, <%= @doctor.picture %> <br>
-<%= @service.name %>, <%= @service.info %>, <%= @service.cost %>, <%= @service.type %>, <%= @service.specialty %>
+<b><center><%= @service.name %> provided by <%= @doctor.name %> </b></center>
+<div style="float:left;padding:5px;"><img src="<%= Callme.Avatar.url({@doctor.avatar, @doctor}, :thumb) %>" ></div>
+<%= @service.info %> The expense for this services is a follows: <%= @service.cost %> <br> This service is provided by <%= @doctor.name %>. <%= @doctor.bio %><br><br><center> ADD FORM TO GET MORE INFORMATION HERE </center>
