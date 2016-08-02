@@ -24,7 +24,7 @@
 
   <li>
     <strong>Picture:</strong>
-    <%= Avatar.url({@doctor.avatar, @doctor}, :thumb) %>
+    <%= Callme.Avatar.url({@doctor.avatar, @doctor}, :thumb) %>
   </li>
 
 </ul>
