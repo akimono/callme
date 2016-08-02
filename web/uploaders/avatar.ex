@@ -14,7 +14,7 @@ defmodule Callme.Avatar do
   end
 
   def transform(:thumb, _) do
-    {:convert, "-strip -thumbnail 125x200^ -gravity center -extent 125x200"}
+    {:convert, "-strip -thumbnail 150x200^ -gravity center -extent 150x200"}
   end
 
   def filename(version, {file, scope}) do
