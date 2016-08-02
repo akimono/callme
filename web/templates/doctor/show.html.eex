@@ -24,7 +24,7 @@
 
   <li>
     <strong>Picture:</strong>
-    <img src="<%= Callme.Avatar.url({@doctor.avatar, @doctor}, :thumb) %>">
+    <img src="<%= Callme.Avatar.url({@doctor.avatar, @doctor}, :thumb) %>" style="width:100px;height:100px;">
   </li>
 
 </ul>
