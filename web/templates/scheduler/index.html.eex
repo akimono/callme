@@ -1,8 +1,22 @@
 <center><h2> Come Join our Team!</h2>
  <p style="font-size:70%;"> Call Me MD partners with providers all over the US to be able to help provide direct care without having to deal with the hassels of staffing a billing office. You focus on providing great care and let us focus on everything else!<br>
-<br> Want to expand or earn some extra income? Contact us to inquire about opportunities to become listed and start gaining new patients.
-<br><br> <b>Provider Contact form Here</b>
 </p>
 
 
-</center>
+
+<h3> Contact us for More Information on How to Provide Your Services or Email us Directly at Contact@callmemd.com</h3></center>
+<form style="font-size:80%;" action="<%= scheduler_path(@conn, :providerform)%>" method="post" id="request">
+ <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" style="font-size:80%;color:black;" required="1"  name="name" class="form-control" />
+
+    <label for="email">Email</label>
+    <input type="text" required="1" style="font-size:80%;color:black;" id="email" name="email" class="form-control" />
+     <label for="confemail">Confirm Email</label><br>
+    <input name="emailConfirm" style="font-size:80%;color:black;" type="text" class="form-control" id="confemail" onblur="confirmEmail()"/>
+    <label for="comments">Tell us about what you would like to do</label>
+    <textarea rows="6" cols="80" style="font-size:80%;color:black;" class="form-control" name="comments" form="request">Tell us about yourself and what you would like to do and we will get back to you </textarea>
+    <input type="hidden" name="_csrf_token" value="<%= get_csrf_token() %>">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

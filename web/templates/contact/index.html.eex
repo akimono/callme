@@ -1,1 +1,26 @@
-</p>contact page test</p>
+<script type="text/javascript">
+    function confirmEmail() {
+        var email = document.getElementById("email").value
+        var confemail = document.getElementById("confemail").value
+        if(email != confemail) {
+            alert('Email Confirmation Does Not Match');
+        }
+    }
+</script><center>
+
+<h3> Contact us for More Information or Email us directly at Contact@callmemd.com</h3></center>
+<form style="font-size:80%;" action="<%= contact_path(@conn, :contactform)%>" method="post" id="request">
+ <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" style="font-size:80%;color:black;" required="1"  name="name" class="form-control" />
+
+    <label for="email">Email</label>
+    <input type="text" required="1" style="font-size:80%;color:black;" id="email" name="email" class="form-control" />
+     <label for="confemail">Confirm Email</label><br>
+    <input name="emailConfirm" style="font-size:80%;color:black;" type="text" class="form-control" id="confemail" onblur="confirmEmail()"/>
+    <label for="comments">Comments or Questions?</label>
+    <textarea rows="6" cols="80" style="font-size:80%;color:black;" class="form-control" name="comments" form="request">Enter specific comments or questions here </textarea>
+    <input type="hidden" name="_csrf_token" value="<%= get_csrf_token() %>">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

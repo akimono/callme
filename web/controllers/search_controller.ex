@@ -35,4 +35,8 @@ defmodule Callme.SearchController do
         end
   render conn, "refinesearch.html", servicetype: servicetype, specialty: specialty, zip: userzip, servicesshown: servicesshown
 end
+ def servicerequest(conn, _params) do
+  Callme.Mailer.servrequest(_params["name"], _params["email"], _params["comments"], _params["doctor"], _params["service"])
+  render conn, "servicerequest.html"
+ end
 end

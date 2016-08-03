@@ -1,3 +1,31 @@
 <b><center><%= @service.name %> provided by <%= @doctor.name %> </b></center>
 <div style="float:left;padding:5px;"><img src="<%= Callme.Avatar.url({@doctor.avatar, @doctor}, :thumb) %>" ></div>
-<%= @service.info %> The expense for this services is a follows: <%= @service.cost %> <br> This service is provided by <%= @doctor.name %>. <%= @doctor.bio %><br><br><center> ADD FORM TO GET MORE INFORMATION HERE </center>
+<%= @service.info %> The expense for this services is a follows: <%= @service.cost %> <br> This service is provided by <%= @doctor.name %>. <%= @doctor.bio %>
+<br>
+<script type="text/javascript">
+    function confirmEmail() {
+        var email = document.getElementById("email").value
+        var confemail = document.getElementById("confemail").value
+        if(email != confemail) {
+            alert('Email Confirmation Does Not Match');
+        }
+    }
+</script><center>
+<h3> Request more information about <%= @service.name %> </h3></center>
+<form style="font-size:80%;" action="<%= search_path(@conn, :servicerequest)%>" method="post" id="request">
+ <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" style="font-size:80%;color:black;" required="1"  name="name" class="form-control" />
+
+    <label for="email">Email</label>
+    <input type="text" required="1" style="font-size:80%;color:black;" id="email" name="email" class="form-control" />
+     <label for="confemail">Confirm Email</label><br>
+    <input name="emailConfirm" style="font-size:80%;color:black;" type="text" class="form-control" id="confemail" onblur="confirmEmail()"/>
+    <label for="comments">Comments or Questions?</label>
+    <textarea rows="6" cols="80" style="font-size:80%;color:black;" class="form-control" name="comments" form="request">Enter specific comments or questions here </textarea>
+    <input type="hidden" name="doctor" value="<%= @doctor.name %>" />
+    <input type="hidden" name="service" value="<%= @service.name %>" />  
+    <input type="hidden" name="_csrf_token" value="<%= get_csrf_token() %>">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

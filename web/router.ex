@@ -36,6 +36,10 @@ end
     post "refinesearch", SearchController, :refinesearch
     resources "/videos", VideoController
     get "/bytopic", MededController, :bytopic
+    post "/servicerequest", SearchController, :servicerequest
+    post "/contactrequest", ContactController, :contactform
+    post "/providerform", SchedulerController, :providerform
+    post "/pricingform", PricingController, :pricingform
   end
 
   # Other scopes may use custom stacks.
