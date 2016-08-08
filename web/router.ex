@@ -40,6 +40,7 @@ end
     post "/contactrequest", ContactController, :contactform
     post "/providerform", SchedulerController, :providerform
     post "/pricingform", PricingController, :pricingform
+    get "/nozip", SearchController, :nozip
   end
 
   # Other scopes may use custom stacks.
