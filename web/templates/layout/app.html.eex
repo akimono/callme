@@ -13,7 +13,8 @@
   </head>
 
   <body >
-    <div class="container" style="font-family:lora; font-size:175%">
+  <div style="opacity:0.2;position:fixed;z-index: -1;width:100%;height:100%>"> <img style="width:100%;" src="\images\background.jpg"> </div>
+    <div class="container" style="font-family:lora; font-size:175%;">
       <header class="header">
         <nav role="navigation">
         <div style="position:absolute;"> <a href="<%= page_path @conn, :index %>"><img src="\images\callme.png"></a></div><br><br><div style="position:relative; left: 300px; top: -40px; font-size: 130%" >Call Us: (864) 932-3071 </div><div style="position:relative; left: 360px; top: -40px; font-size: 90%;" >Email us: Contact@callmemd.com</div> <%=  if @current_user do %> <%= @current_user.email %> <div style="position:relative; left: 600px; top: -22px" > <%= link "Log out", to: session_path(@conn, :delete, @current_user),
