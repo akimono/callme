@@ -1945,7 +1945,1019 @@ Repo.insert! %Zipcode{
  state: "South Carolina"
   }
   #end marlboro start mccormick
-  
+Repo.insert! %Zipcode{
+ zip:"29821",
+ county: "Mccormick, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29835",
+ county: "Mccormick, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29838",
+ county: "Mccormick, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29840",
+ county: "Mccormick, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29844",
+ county: "Mccormick, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29845",
+ county: "Mccormick, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29899",
+ county: "Mccormick, SC",
+ state: "South Carolina"
+  }
+  # end mccormick start newberry
+Repo.insert! %Zipcode{
+ zip:"29037",
+ county: "Newberry, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29075",
+ county: "Newberry, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29108",
+ county: "Newberry, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29122",
+ county: "Newberry, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29126",
+ county: "Newberry, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29127",
+ county: "Newberry, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29145",
+ county: "Newberry, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29178",
+ county: "Newberry, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29355",
+ county: "Newberry, SC",
+ state: "South Carolina"
+  }
+# end newberry start oconee
+
+Repo.insert! %Zipcode{
+ zip:"29643",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29658",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29664",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29665",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29672",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29675",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29676",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29678",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29679",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29686",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29691",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29693",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29696",
+ county: "Oconee, SC",
+ state: "South Carolina"
+  }
+  # end oconee start orangeburg
+  Repo.insert! %Zipcode{
+ zip:"29018",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29038",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29039",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29047",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29048",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29059",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29107",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29112",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29113",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29115",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29116",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29117",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29118",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29133",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29142",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29146",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29163",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29432",
+ county: "Orangeburg, SC",
+ state: "South Carolina"
+  }
+  #end orangeburg start pickens
+  Repo.insert! %Zipcode{
+ zip:"29630",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29631",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29632",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29633",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29634",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29640",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29641",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29642",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29657",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29667",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29671",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29682",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29685",
+ county: "Pickens, SC",
+ state: "South Carolina"
+  }
+#end pickens start richland
+Repo.insert! %Zipcode{
+ zip:"29002",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29016",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29044",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29052",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29061",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29063",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29147",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29177",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29201",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29202",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29203",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29204",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29205",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29206",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29207",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29208",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29209",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29210",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29211",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29214",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29215",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29216",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29217",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29218",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29219",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29220",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29221",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29222",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29223",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29224",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29225",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29226",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29227",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29229",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29230",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29240",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29250",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29260",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29290",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29292",
+ county: "Richland, SC",
+ state: "South Carolina"
+  }
+  #end richland start saluda
+  Repo.insert! %Zipcode{
+ zip:"29105",
+ county: "Saluda, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29129",
+ county: "Saluda, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29138",
+ county: "Saluda, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29166",
+ county: "Saluda, SC",
+ state: "South Carolina"
+  }
+# end saluda start Spartanburg
+Repo.insert! %Zipcode{
+ zip:"29301",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29302",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29303",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29304",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29305",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29306",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29307",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29316",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29318",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29319",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29320",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29322",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29323",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29324",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29329",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29330",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29331",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29333",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29334",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29335",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29336",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29338",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29346",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29348",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29349",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29356",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29365",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29368",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29369",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29372",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29373",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29374",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29375",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29376",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29377",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29378",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29385",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29386",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29388",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29390",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29391",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29698",
+ county: "Spartanburg, SC",
+ state: "South Carolina"
+  }
+# end spartanburg start sumter
+Repo.insert! %Zipcode{
+ zip:"29040",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29062",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29104",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29125",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29128",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29150",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29151",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29152",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29153",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29154",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29168",
+ county: "Sumter, SC",
+ state: "South Carolina"
+  }
+  #end sumter start union
+Repo.insert! %Zipcode{
+ zip:"29031",
+ county: "Union, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29321",
+ county: "Union, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29353",
+ county: "Union, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29364",
+ county: "Union, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29379",
+ county: "Union, SC",
+ state: "South Carolina"
+  }
+#end union start Williamsburg
+Repo.insert! %Zipcode{
+ zip:"29056",
+ county: "Williamsburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29518",
+ county: "Williamsburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29554",
+ county: "Williamsburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29556",
+ county: "Williamsburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29564",
+ county: "Williamsburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29580",
+ county: "Williamsburg, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29590",
+ county: "Williamsburg, SC",
+ state: "South Carolina"
+  }
+#end williamsburg start York
+Repo.insert! %Zipcode{
+ zip:"29703",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29704",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29708",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29710",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29715",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29716",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29717",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29726",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29730",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29731",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29732",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29733",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29734",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29742",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29743",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29745",
+ county: "York, SC",
+ state: "South Carolina"
+  }
+# end york start other
+Repo.insert! %Zipcode{
+ zip:"29017",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29021",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29076",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29077",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29131",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29183",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29395",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29408",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29411",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29595",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29707",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29719",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29814",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+Repo.insert! %Zipcode{
+ zip:"29909",
+ county: "Other, SC",
+ state: "South Carolina"
+  }
+
+
+
+
+
 
 
 
