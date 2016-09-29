@@ -1,6 +1,6 @@
 <b><center><%= @service.name %> provided by <%= @doctor.name %> </b></center><br>
 <div style="float:left;padding:5px;"><img src="<%= Callme.Avatar.url({@doctor.avatar, @doctor}, :thumb) %>" ></div><p style="text-indent: 50px;">
-<%= @service.info %></p><p style="text-indent: 50px;"> The expense for this services is a follows: <%= @service.cost %></p><p style="text-indent: 50px;"> <br> This service is provided by <%= @doctor.name %>. <%= @doctor.bio %></p>
+<%= @service.info %></p><p style="text-indent: 50px;"> The expense for this services is a follows: <%= @service.cost %></p><p style="text-indent: 50px;"> <br><p style="text-indent: 50px;">  This service is provided by <%= @doctor.name %>. <%= @doctor.bio %></p>
 <br>
 <script type="text/javascript">
     function confirmEmail() {
