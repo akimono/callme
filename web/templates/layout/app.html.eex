@@ -29,12 +29,12 @@ method: "delete" %><% else %><div style="position:relative; left: 600px; top: -2
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 <div class="jumbotron">
 
-<p><a href="<%= about_path( @conn, :index) %>">Find Services in Your Area</a>  | <a href="<%= pricing_path( @conn, :index) %>">Need a Quick Call?</a> | <a href="<%= meded_path( @conn, :index) %>">Patient Medical Education</a> | <a href="<%= scheduler_path( @conn, :index) %>">For Providers</a> |  <a href="<%= contact_path @conn, :index %>">Contact Us</a> </p>
+<p><a href="<%= about_path( @conn, :index) %>">Find Services in Your Area</a>  | <a href="<%= pricing_path( @conn, :index) %>">*$89 Unlimited Doctor Calls</a> | <a href="<%= meded_path( @conn, :index) %>">Patient Medical Education</a> | <a href="<%= scheduler_path( @conn, :index) %>">For Providers</a> |  <a href="<%= contact_path @conn, :index %>">Contact Us</a> </p>
 </div>
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
-
+<div style="font-size: 70%">*Some restrictions apply</div>
     </div> <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <script>
