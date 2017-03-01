@@ -35,6 +35,9 @@ method: "delete" %><% else %><div style="position:relative; left: 600px; top: -2
         <%= render @view_module, @view_template, assigns %>
       </main>
 <div style="font-size: 70%">*Some restrictions apply</div>
+<script type="text/javascript">
+(function(a,e,c,f,g,h,b,d){var k={ak:"876135020",cl:"aYcQCNev724Q7ITjoQM",autoreplace:"8649323071"};a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[g]||(a[g]=k.ak);b=e.createElement(h);b.async=1;b.src="//www.gstatic.com/wcm/loader.js";d=e.getElementsByTagName(h)[0];d.parentNode.insertBefore(b,d);a[f]=function(b,d,e){a[c](2,b,k,d,null,new Date,e)};a[f]()})(window,document,"_googWcmImpl","_googWcmGet","_googWcmAk","script");
+</script>
     </div> <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <script>
