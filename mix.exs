@@ -4,7 +4,7 @@ defmodule Callme.Mixfile do
   def project do
     [app: :callme,
      version: "0.0.1",
-     elixir: "1.2.4",
+     elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
