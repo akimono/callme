@@ -4,7 +4,7 @@
 
 
 
-<h3> Contact us for More Information on How to Provide Your Services or Email us Directly at Contact@callmemd.com</h3></center>
+<h3> Contact us for more information on how to provide your services or email us directly at contact@callmemd.com</h3></center>
 <form style="font-size:80%;" action="<%= scheduler_path(@conn, :providerform)%>" method="post" id="request">
  <div class="form-group">
     <label for="name">Name</label>

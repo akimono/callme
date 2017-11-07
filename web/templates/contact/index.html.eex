@@ -8,7 +8,7 @@
     }
 </script><center>
 
-<h3> Call us at (864) 932-3071 or email us directly at Contact@callmemd.com</h3></center>
+<h3> Call us at (864) 932-3071 or email us directly at contact@callmemd.com</h3></center>
 <form style="font-size:80%;" action="<%= contact_path(@conn, :contactform)%>" method="post" id="request">
  <div class="form-group">
     <label for="name">Name</label>

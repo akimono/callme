@@ -1,7 +1,7 @@
 <center> <h2> Get Unlimited Calls to your Doctor for $49 per Month! </h3><br>
 
 <p style="font-size: 70%"> Join now to get unlimited calls to your doctor, along with scheduled home and office visits all for one price. Unlike traditional office visits, calls, home, and office visits from our providers are not limited to 15 minutes and can go on as long as needed. Service is month to month with no annual contract<br> <br> 
-This service is limited and not all patients will qualify. Currently not accepting patients who are enrolled in medicaid or medicare. Patients and Doctors maintain the right to refuse to accept service or to cancel service for any or no reason at any time.  <br><br>
+This service is limited and not all patients will qualify. Patients and Doctors maintain the right to refuse to accept service or to cancel service for any or no reason.  <br><br>
 
 <h3>Please contact us for more information or call us at (864) 932-3071:</h3></center>
 <form style="font-size:80%;" action="<%= pricing_path(@conn, :pricingform)%>" method="post" id="request">
