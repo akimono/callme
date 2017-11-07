@@ -37,7 +37,7 @@ defmodule Callme.Mixfile do
      {:phoenix_html, "~> 2.4"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
-     {:comeonin, "~> 1.0"},
+     {:comeonin, "~> 2.6"},
      {:mailgun, "~> 0.1.2"},
      {:poison, "~> 2.1", override: true},
      {:cowboy, "~> 1.0"},
