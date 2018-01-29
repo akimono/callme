@@ -13,6 +13,7 @@
   </head>
 
   <body >
+  <script type="text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><script type="text/javascript" src="https://providers.doctor.com/mobileEnhance/detect?key=o8lgh4Inz3jvdL87gcXm44LSfONGDIeQ"></script>
   <div style="opacity:0.2;position:fixed;z-index: -1;width:100%;height:100%>"> <img style="width:100%;" src="\images\background.jpg"> </div>
     <div class="container" style="font-family:lora; font-size:175%;">
       <header class="header">
