@@ -18,7 +18,9 @@
     <div class="container" style="font-family:lora; font-size:175%;">
       <header class="header">
         <nav role="navigation">
-        <div style="position:absolute;"> <a href="<%= page_path @conn, :index %>"><img src="\images\callme.png"></a></div><br><br><div style="position:relative; left: 300px; top: -40px; font-size: 130%" >Call Us: (864) 932-3071 </div><div style="position:relative; left: 360px; top: -40px; font-size: 90%;" >Email us: Contact@callmemd.com</div> <%=  if @current_user do %> <%= @current_user.email %> <div style="position:relative; left: 600px; top: -22px" > <%= link "Log out", to: session_path(@conn, :delete, @current_user),
+        <div style="position:absolute;"> <a href="<%= page_path @conn, :index %>"><img src="\images\callme.png"></a></div><br><br><div style="position:relative; left: 300px; top: -40px; font-size: 130%" >Call Us: (864) 932-3071 </div><div id="eRDM_p06QTrMS7CmZm5cKIaCJ9zzbEKD_get_appointment_container">
+<script type="text/javascript" src="https://providers.doctor.com/siteEnhance/getAppointmentWidget?key=eRDM_p06QTrMS7CmZm5cKIaCJ9zzbEKD"></script>
+</div><div style="position:relative; left: 360px; top: -40px; font-size: 90%;" >Email us: Contact@callmemd.com</div> <%=  if @current_user do %> <%= @current_user.email %> <div style="position:relative; left: 600px; top: -22px" > <%= link "Log out", to: session_path(@conn, :delete, @current_user),
 method: "delete" %><% else %><div style="position:relative; left: 600px; top: -22px" ><% end %>
          
         </div>
@@ -28,9 +30,7 @@ method: "delete" %><% else %><div style="position:relative; left: 600px; top: -2
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-      <div id="eRDM_p06QTrMS7CmZm5cKIaCJ9zzbEKD_get_appointment_container">
-<script type="text/javascript" src="https://providers.doctor.com/siteEnhance/getAppointmentWidget?key=eRDM_p06QTrMS7CmZm5cKIaCJ9zzbEKD"></script>
-</div>
+
 <div class="jumbotron">
 
 <p><a href="<%= about_path( @conn, :index) %>">Find Services in Your Area</a>  | <a href="<%= pricing_path( @conn, :index) %>">*$49 Unlimited Doctor Calls</a> | <a href="<%= meded_path( @conn, :index) %>">Patient Medical Education</a> | <a href="<%= scheduler_path( @conn, :index) %>">For Providers</a> |  <a href="<%= contact_path @conn, :index %>">Contact Us</a> </p>
