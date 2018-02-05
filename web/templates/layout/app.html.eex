@@ -28,6 +28,9 @@ method: "delete" %><% else %><div style="position:relative; left: 600px; top: -2
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <div id="eRDM_p06QTrMS7CmZm5cKIaCJ9zzbEKD_get_appointment_container">
+<script type="text/javascript" src="https://providers.doctor.com/siteEnhance/getAppointmentWidget?key=eRDM_p06QTrMS7CmZm5cKIaCJ9zzbEKD"></script>
+</div>
 <div class="jumbotron">
 
 <p><a href="<%= about_path( @conn, :index) %>">Find Services in Your Area</a>  | <a href="<%= pricing_path( @conn, :index) %>">*$49 Unlimited Doctor Calls</a> | <a href="<%= meded_path( @conn, :index) %>">Patient Medical Education</a> | <a href="<%= scheduler_path( @conn, :index) %>">For Providers</a> |  <a href="<%= contact_path @conn, :index %>">Contact Us</a> </p>
